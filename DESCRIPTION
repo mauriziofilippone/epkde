@@ -1,0 +1,31 @@
+Package: epkde
+Type: Package
+Title: Bayesian Bandwidth Selection for Multivariate KDE via Expectation Propagation
+Version: 0.1.0
+Authors@R: person("Maurizio", "Filippone", email = "maurizio.filippone@kaust.edu.sa", role = c("aut", "cre"))
+Author: Maurizio Filippone [aut, cre]
+Maintainer: Maurizio Filippone <maurizio.filippone@kaust.edu.sa>
+Description: Implements the approximate Bayesian method for bandwidth selection
+    in multivariate kernel density estimation (KDE) proposed in Filippone &
+    Sanguinetti (2011) <doi:10.1016/j.csda.2011.05.023>. The method uses the
+    Expectation Propagation (EP) algorithm to approximate the posterior
+    distribution of the inverse bandwidth (precision matrix) under a
+    leave-one-out cross-validated likelihood. Three covariance structures are
+    supported: isotropic (scalar precision), diagonal, and full precision
+    matrix. Online Bayesian updating is supported for the isotropic case.
+    The approximate posterior can be used for bandwidth selection, model
+    comparison (via the model evidence / Bayes factor), and online learning.
+Depends: R (>= 4.0.0)
+License: GPL-3
+Encoding: UTF-8
+Imports:
+Suggests:
+    ks,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+VignetteBuilder: knitr
+URL: https://github.com/mauriziofilippone/epkde
+BugReports: https://github.com/mauriziofilippone/epkde/issues

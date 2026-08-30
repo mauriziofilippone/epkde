@@ -1,0 +1,14 @@
+# R build artefacts
+*.Rcheck/
+*.tar.gz
+*.pdf
+inst/doc/
+
+# R session
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# macOS
+.DS_Store
